@@ -10,10 +10,12 @@ export default function Header() {
   const tel_phone = basics?.phone ? stripPhonePunctuation(basics.phone) : "";
 
   return (
-    <header>
-      <h1>{basics.name}</h1>
+    <header className="flex justify-center items-center flex-col">
+      <h1 className="mb-1 text-4xl font-bold text-black">{basics.name}</h1>
 
-      <address>
+      <address
+        className={`not-italic text-sm flex flex-col justify-center items-center `}
+      >
         {basics.email && basics.phone && (
           <p>
             <a href={`mailto:${basics.email}`} target="_blank">
@@ -31,7 +33,12 @@ export default function Header() {
             return (
               <>
                 {idx > 0 && <span> · </span>}
-                <a key={profile.name} href={`${profile.url}`} target="_blank">
+                <a
+                  className="text-indigo-900"
+                  key={profile.name}
+                  href={`${profile.url}`}
+                  target="_blank"
+                >
                   {trimmedUrl}
                 </a>
               </>
