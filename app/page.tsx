@@ -1,6 +1,7 @@
 import Header from "@/app/ui/header";
 import Section from "@/app/ui/section";
 import SkillsList from "@/app/ui/skills-list";
+import CertificateList from "@/app/ui/certificate-list";
 
 export default function Home() {
   return (
@@ -8,6 +9,9 @@ export default function Home() {
       <Header />
       <Section name="Skills">
         <SkillsList />
+      </Section>
+      <Section name="Certificates">
+        <CertificateList />
       </Section>
     </main>
   );
