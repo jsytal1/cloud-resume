@@ -4,3 +4,14 @@
 
 @media (prefers-color-scheme: dark) {
 }
+
+body {
+  color: black;
+  background: rgb(214, 219, 220);
+}
+
+@media print {
+  body {
+    background: transparent;
+  }
+}
