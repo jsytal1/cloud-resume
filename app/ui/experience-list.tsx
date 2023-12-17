@@ -9,17 +9,22 @@ export default function Section() {
     <ul>
       {experiences.map((experience) => {
         return (
-          <li key={`${experience.position}-${experience.organization}`}>
-            <h3>{experience.position}</h3>
-            <p>
+          <li
+            className="mb-5 break-inside-avoid"
+            key={`${experience.position}-${experience.organization}`}
+          >
+            <h3 className="text-xl font-bold text-black">
+              {experience.position}
+            </h3>
+            <p className="text-lg">
               <i>{experience.organization}</i>
             </p>
-            <p>
+            <p className="text-gray-800 text-sm">
               <Time date={experience.startDate} />
               <span> - </span>
               <Time date={experience.endDate} />
             </p>
-            <ul>
+            <ul className="ml-5 list-disc list-outside">
               {experience.highlights.map((highlight, idx) => {
                 return <li key={idx}>{highlight}</li>;
               })}
