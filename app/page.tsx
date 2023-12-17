@@ -3,6 +3,7 @@ import Section from "@/app/ui/section";
 import SkillsList from "@/app/ui/skills-list";
 import CertificateList from "@/app/ui/certificate-list";
 import ExperienceList from "@/app/ui/experience-list";
+import EducationList from "@/app/ui/education-list";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       </Section>
       <Section name="Experience">
         <ExperienceList />
+      </Section>
+      <Section name="Education">
+        <EducationList />
       </Section>
     </main>
   );
