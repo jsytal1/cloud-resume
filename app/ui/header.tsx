@@ -2,6 +2,7 @@ import { fetchBasics, fetchProfiles } from "@/app/lib/data";
 import { stripPhonePunctuation } from "@/app/lib/utils";
 
 import Section from "@/app/ui/section";
+import { Fragment } from "react";
 
 export default function Header() {
   const basics = fetchBasics();
@@ -31,8 +32,8 @@ export default function Header() {
           {profiles.map((profile, idx) => {
             const trimmedUrl = profile.url.replace(/^https:\/\/(www\.)?/, "");
             return (
-              <>
-                {idx > 0 && <span> · </span>}
+              <Fragment key={profile.name}>
+                {idx > 0 && <span key={`${profile.name}-separator`}> · </span>}
                 <a
                   className="text-indigo-900"
                   key={profile.name}
@@ -41,7 +42,7 @@ export default function Header() {
                 >
                   {trimmedUrl}
                 </a>
-              </>
+              </Fragment>
             );
           })}
         </p>

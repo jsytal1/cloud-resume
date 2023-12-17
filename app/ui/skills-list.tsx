@@ -1,4 +1,5 @@
 import { fetchSkills } from "@/app/lib/data";
+import { Fragment } from "react";
 
 export default function Section() {
   const skills = fetchSkills();
@@ -10,10 +11,10 @@ export default function Section() {
           <li key={skill.category}>
             <strong>{skill.category}: </strong>
             {skill.keywords.map((keyword, idx) => (
-              <>
+              <Fragment key={keyword}>
                 {!!idx && <span> · </span>}
-                <span key={keyword}>{keyword}</span>
-              </>
+                <span>{keyword}</span>
+              </Fragment>
             ))}
           </li>
         );
