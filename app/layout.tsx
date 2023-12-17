@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { fetchMetadata } from '@/app/lib/data';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Resume',
-  description: 'resume',
+export function generateMetadata(
+): Metadata {
+  const metadata = fetchMetadata();
+  return metadata;
 }
 
 export default function RootLayout({
