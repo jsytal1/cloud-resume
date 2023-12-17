@@ -1,12 +1,11 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import { fetchMetadata } from '@/app/lib/data';
+import type { Metadata } from "next";
+import { Lato } from "next/font/google";
+import "./globals.css";
+import { fetchMetadata } from "@/app/lib/data";
 
-const inter = Inter({ subsets: ['latin'] })
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
-export function generateMetadata(
-): Metadata {
+export function generateMetadata(): Metadata {
   const metadata = fetchMetadata();
   return metadata;
 }
@@ -14,11 +13,11 @@ export function generateMetadata(
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={lato.className}>{children}</body>
     </html>
-  )
+  );
 }
