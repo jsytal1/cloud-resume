@@ -6,6 +6,7 @@ import {
   Certificate,
   Experience,
   Education,
+  Project,
 } from "./definitions";
 
 export function fetchMetadata(): Metadata {
@@ -148,6 +149,18 @@ export function fetchEducation(): Education[] {
       startDate: "2009-09",
       endDate: "2013-05",
       gpa: "3.78",
+    },
+  ];
+}
+
+export function fetchProjects(): Project[] {
+  return [
+    {
+      name: "Cloud Resume Challenge",
+      url: "https://resume.jozef.syta.dev",
+      highlights: [
+        "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, API Gateway",
+      ],
     },
   ];
 }

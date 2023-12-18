@@ -2,6 +2,7 @@ import Header from "@/app/ui/header";
 import Section from "@/app/ui/section";
 import SkillsList from "@/app/ui/skills-list";
 import CertificateList from "@/app/ui/certificate-list";
+import ProjectList from "@/app/ui/project-list";
 import ExperienceList from "@/app/ui/experience-list";
 import EducationList from "@/app/ui/education-list";
 import Footer from "@/app/ui/footer";
@@ -34,6 +35,9 @@ export default function Home() {
         </Section>
         <Section name="Certificates">
           <CertificateList />
+        </Section>
+        <Section name="Projects">
+          <ProjectList />
         </Section>
         <Section name="Experience">
           <ExperienceList />

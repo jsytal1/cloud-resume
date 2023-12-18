@@ -1,7 +1,7 @@
 export interface Metadata {
-    title: string;
-    description: string;
-    image?: string;
+  title: string;
+  description: string;
+  image?: string;
 }
 
 export interface Location {
@@ -54,4 +54,10 @@ export interface Certificate {
   url: string;
   issuer: string;
   image: string;
+}
+
+export interface Project {
+  name: string;
+  url: string;
+  highlights: string[];
 }
