@@ -14,6 +14,7 @@ export default function Section() {
             <a
               className="flex align-middle hover:bg-slate-100 space-x-2 p-2 rounded-md"
               target="_blank"
+              rel="noopener noreferrer"
               href={certificate.url}
             >
               <Image

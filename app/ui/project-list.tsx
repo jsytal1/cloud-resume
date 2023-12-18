@@ -14,6 +14,7 @@ export default function Section() {
                 className="text-indigo-900"
                 href={`${item.url}`}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {item.url}
               </a>

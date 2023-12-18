@@ -19,7 +19,11 @@ export default function Header() {
       >
         {basics.email && basics.phone && (
           <p>
-            <a href={`mailto:${basics.email}`} target="_blank">
+            <a
+              href={`mailto:${basics.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {basics.email}
             </a>
             <span>·</span>
@@ -39,6 +43,7 @@ export default function Header() {
                   key={profile.name}
                   href={`${profile.url}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {trimmedUrl}
                 </a>
