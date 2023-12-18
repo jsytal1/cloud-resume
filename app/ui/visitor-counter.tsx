@@ -29,7 +29,7 @@ export default function VisitorCounter() {
 
   return (
     <p className="text-white">
-      Visitors: <span>{data.visitors}</span>
+      Visitors: <span data-testid="visitor-count">{data.visitors}</span>
     </p>
   );
 }
