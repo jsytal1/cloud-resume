@@ -56,6 +56,6 @@ jobs:
           role-to-assume: arn:aws:iam::350334651762:role/CloudResume-GithubActionsRole
           aws-region: us-east-1
       - name: Delete Old Folder
-        run: aws s3 rm s3://resume.jozef.syta.dev/green --recursive
+        run: aws s3 rm s3://resume.jozef.syta.dev/blue --recursive
       - name: Upload to S3
-        run: aws s3 cp ./out s3://resume.jozef.syta.dev/green --recursive
+        run: aws s3 cp ./out s3://resume.jozef.syta.dev/blue --recursive
