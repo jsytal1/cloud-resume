@@ -159,7 +159,7 @@ export function fetchProjects(): Project[] {
       name: "Cloud Resume Challenge",
       url: "https://resume.jozef.syta.dev",
       highlights: [
-        "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, API Gateway",
+        "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, and API Gateway",
       ],
     },
   ];
