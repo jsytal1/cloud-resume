@@ -19,3 +19,9 @@ test("visitor counter", async ({ page }) => {
 
   await expect(newCount > count).toBeTruthy();
 });
+
+test("failed test", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page).toHaveTitle(/RResume/);
+});
