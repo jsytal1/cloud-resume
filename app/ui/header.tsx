@@ -21,14 +21,17 @@ export default function Header() {
           <p>
             <a
               href={`mailto:${basics.email}`}
+              className="text-indigo-900"
               target="_blank"
               rel="noopener noreferrer"
             >
               {basics.email}
             </a>
-            <span>·</span>
-            <a href={`tel:${tel_phone}`}>{basics.phone}</a>
-            <span>·</span>
+            <span className="mx-1"> · </span>
+            <a className="text-indigo-900" href={`tel:${tel_phone}`}>
+              {basics.phone}
+            </a>
+            <span className="mx-1"> · </span>
             <span>{basics.location.city}</span>
           </p>
         )}
@@ -37,7 +40,7 @@ export default function Header() {
             const trimmedUrl = profile.url.replace(/^https:\/\/(www\.)?/, "");
             return (
               <Fragment key={profile.name}>
-                {idx > 0 && <span key={`${profile.name}-separator`}> · </span>}
+                {idx > 0 && <span className="mx-1"> · </span>}
                 <a
                   className="text-indigo-900"
                   key={profile.name}
