@@ -21,6 +21,8 @@ export function fetchBasics(): Basics {
   return {
     name: "Jozef Syta",
     title: "Senior Software Engineer",
+    email: process.env.EMAIL,
+    phone: process.env.PHONE,
     summary:
       "Growth-oriented Software Engineer, with over 8 years of experience. Rapidly adapts to new technologies and optimizes team performance. Seeking a position as a Senior Software Engineer, ideally in an AWS environment, with a focus on site reliability and performance. Proficient in JavaScript/TypeScript (Node.js, Express.js, React.js), and Elasticsearch.",
     location: {
