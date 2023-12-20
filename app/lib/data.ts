@@ -22,7 +22,7 @@ export function fetchBasics(): Basics {
     name: "Jozef Syta",
     title: "Senior Software Engineer",
     summary:
-      "Adaptable and growth-oriented web development professional with over 8 years of experience. Rapidly adapts to new technologies and optimizes team performance. Seeking a position as a Senior Software Engineer, ideally in an AWS environment, with a focus on site reliability and performance. Proficient in JavaScript/TypeScript (Node.js, Express.js, React.js), and Elasticsearch.",
+      "Growth-oriented Software Engineer, with over 8 years of experience. Rapidly adapts to new technologies and optimizes team performance. Seeking a position as a Senior Software Engineer, ideally in an AWS environment, with a focus on site reliability and performance. Proficient in JavaScript/TypeScript (Node.js, Express.js, React.js), and Elasticsearch.",
     location: {
       city: "New York City",
       countryCode: "US",
