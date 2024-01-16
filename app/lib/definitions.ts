@@ -14,7 +14,7 @@ export interface Location {
 export interface Basics {
   name: string;
   title: string;
-  summary: string;
+  summary?: string;
   location: Location;
   email?: string;
   phone?: string;

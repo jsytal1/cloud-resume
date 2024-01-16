@@ -23,8 +23,8 @@ export function fetchBasics(): Basics {
     title: "Senior Software Engineer",
     email: process.env.EMAIL,
     phone: process.env.PHONE,
-    summary:
-      "Growth-oriented Software Engineer, with over 8 years of experience. Rapidly adapts to new technologies and optimizes team performance. Seeking a position as a Senior Software Engineer, ideally in an AWS environment, with a focus on site reliability and performance. Proficient in JavaScript/TypeScript (Node.js, Express.js, React.js), and Elasticsearch.",
+    //    summary:
+    //      "Growth-oriented Software Engineer, with over 8 years of experience. Rapidly adapts to new technologies and optimizes team performance. Seeking a position as a Senior Software Engineer, ideally in an AWS environment, with a focus on site reliability and performance. Proficient in JavaScript/TypeScript (Node.js, Express.js, React.js), and Elasticsearch.",
     location: {
       city: "New York City",
       countryCode: "US",
@@ -50,17 +50,11 @@ export function fetchSkills(): Skills[] {
   return [
     {
       category: "Languages",
-      keywords: [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "SQL",
-        "Elasticsearch DSL",
-      ],
+      keywords: ["JavaScript", "TypeScript", "Python", "SQL"],
     },
     {
       category: "Frameworks & Libraries",
-      keywords: ["Node.js", "React", "Next.js"],
+      keywords: ["Node.js", "React", "Next.js", "SST"],
     },
     {
       category: "SQL Databases",
@@ -102,7 +96,7 @@ export function fetchExperiences(): Experience[] {
       startDate: "2022-01",
       endDate: "2023-03",
       highlights: [
-        "Led a team of developers in the design and launch of a distributed, scalable client portal web app, supporting over 30,000 monthly users; developed with Node.js and React.js",
+        "Led a team of developers in the design and launch of a globally distributed, scalable client portal web app, supporting over 30,000 monthly users; developed with Node.js and React.js",
         "Designed and implemented an attribute-based access control system optimized for a performant search experience using Elasticsearch",
         "Optimized data retrieval in a Node.js-based content management system (CMS), cutting database export and API response times by 60%",
         "Conducted code reviews and provided expert guidance in planning novel software solutions; assisted developers in writing simpler, more robust, and maintainable code",
@@ -116,9 +110,9 @@ export function fetchExperiences(): Experience[] {
       startDate: "2015-05",
       endDate: "2022-12",
       highlights: [
-        "Served as a Full Stack Developer, building key CMS features for both end-users and developers. Features included: content moderation, bulk updates, data validation, media transformation, and content suggestions",
-        "Built REST APIs for internal and external consumption",
-        "Executed ETL data migrations for new and existing clients",
+        "Full Stack Developer. Built key CMS features, including: Content Moderation, Bulk Updates, Data Validation, Media Transformation, and Content Suggestions. Developed with: Node.js, JavaScript, React, Elasticsearch",
+        "Built REST APIs for internal and external consumption with Node.js, JavaScript",
+        //"Executed ETL data migrations for new and existing clients",
       ],
     },
     {
@@ -128,7 +122,7 @@ export function fetchExperiences(): Experience[] {
       startDate: "2014-01",
       endDate: "2015-04",
       highlights: [
-        "Developed an intranet search app that enabled employees to search for documents across multiple internal resources simultaneously",
+        "Improved business efficiency by building an intranet search app that enabled employees to search for documents across multiple internal resources simultaneously",
       ],
     },
   ];
@@ -158,10 +152,17 @@ export function fetchEducation(): Education[] {
 export function fetchProjects(): Project[] {
   return [
     {
+      name: "Make Me Cross - Crossword Maker",
+      url: "https://makemecross.com",
+      highlights: [
+        "A serverless web app for generating dense crossword puzzles. Built with: IaC via SST, TypeScript, React, Python, Golang, Lambda, API Gateway, Amplify, CloudFront, DynamoDB, S3, Cognito, IAM, Route 53",
+      ],
+    },
+    {
       name: "Cloud Resume Challenge",
       url: "https://resume.jozef.syta.dev",
       highlights: [
-        "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, and API Gateway",
+        "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, API Gateway, and Cloudflare",
       ],
     },
   ];

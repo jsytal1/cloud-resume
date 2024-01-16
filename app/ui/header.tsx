@@ -1,12 +1,28 @@
+"use client";
+
 import { fetchBasics, fetchProfiles } from "@/app/lib/data";
 import { stripPhonePunctuation } from "@/app/lib/utils";
 
 import Section from "@/app/ui/section";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 export default function Header() {
-  const basics = fetchBasics();
+  const default_basics = fetchBasics();
   const profiles = fetchProfiles();
+  const [overrides, setOverrides] = useState({});
+  const basics = { ...default_basics, ...overrides };
+
+  useEffect(() => {
+    // Perform localStorage action
+    const basicsJSON = localStorage.getItem("basics") ?? "{}";
+    let basics;
+    try {
+      basics = JSON.parse(basicsJSON);
+    } catch (e) {
+      basics = {};
+    }
+    setOverrides(basics);
+  }, []);
 
   const tel_phone = basics?.phone ? stripPhonePunctuation(basics.phone) : "";
 
@@ -55,9 +71,11 @@ export default function Header() {
           })}
         </p>
       </address>
-      <Section name="Summary">
-        <p>{basics.summary}</p>
-      </Section>
+      {basics.summary && (
+        <Section name="Summary">
+          <p>{basics.summary}</p>
+        </Section>
+      )}
     </header>
   );
 }

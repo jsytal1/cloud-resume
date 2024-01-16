@@ -14,4 +14,8 @@ body {
   body {
     background: transparent;
   }
+  main {
+    padding: 0.7in;
+    padding-top: 0.5in;
+  }
 }
