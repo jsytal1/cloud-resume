@@ -43,6 +43,10 @@ export function fetchProfiles(): Profile[] {
       name: "GitHub",
       url: "https://github.com/jsytal1",
     },
+    {
+      name: "Portfolio",
+      url: "https://resume.jozef.syta.dev",
+    },
   ];
 }
 
@@ -54,23 +58,33 @@ export function fetchSkills(): Skills[] {
     },
     {
       category: "Frameworks & Libraries",
-      keywords: ["Node.js", "React", "Next.js", "SST"],
+      keywords: [
+        "Node.js",
+        "React",
+        "Next.js",
+        "SST (Serverless Stack Toolkit)",
+      ],
     },
     {
-      category: "SQL Databases",
-      keywords: ["Amazon Aurora Serverless", "MySQL", "PostgreSQL"],
+      category: "Databases",
+      keywords: [
+        "MySQL",
+        "PostgreSQL",
+        "Amazon DynamoDB",
+        "Elasticsearch",
+        "Couchbase",
+      ],
     },
     {
-      category: "NoSQL Databases",
-      keywords: ["Amazon DynamoDB", "Elasticsearch", "Couchbase"],
-    },
-    {
-      category: "Tools",
-      keywords: ["Amazon Web Services (AWS)", "Docker", "Git", "CI/CD"],
-    },
-    {
-      category: "Process",
-      keywords: ["Agile", "Scrum"],
+      category: "Tools & Process",
+      keywords: [
+        "Amazon Web Services (AWS)",
+        "Docker",
+        "Git",
+        "CI/CD",
+        "Agile",
+        "Scrum",
+      ],
     },
   ];
 }
@@ -148,12 +162,12 @@ export function fetchProjects(): Project[] {
         "A serverless web app for generating dense crossword puzzles. Built with: IaC via SST, TypeScript, React, Python, Golang, Lambda, API Gateway, Amplify, CloudFront, DynamoDB, S3, Cognito, IAM, Route 53",
       ],
     },
-    {
-      name: "Cloud Resume Challenge",
-      url: "https://resume.jozef.syta.dev",
-      highlights: [
-        "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, API Gateway, and Cloudflare",
-      ],
-    },
+    //{
+    //  name: "Cloud Resume Challenge",
+    //  url: "https://resume.jozef.syta.dev",
+    //  highlights: [
+    //    "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, API Gateway, and Cloudflare",
+    //  ],
+    //},
   ];
 }
