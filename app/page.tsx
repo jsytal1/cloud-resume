@@ -35,7 +35,7 @@ export default function Home() {
         <Section name="Skills">
           <SkillsList />
         </Section>
-        <Section name="Certificates">
+        <Section name="Certifications">
           <CertificateList />
         </Section>
         <Section name="Projects">
