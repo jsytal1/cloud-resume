@@ -93,7 +93,7 @@ export function fetchExperiences(): Experience[] {
       organization: "RubensteinTech",
       location: "New York, NY",
       position: "Lead Software Engineer",
-      startDate: "2022-01",
+      startDate: "2020-11",
       endDate: "2023-03",
       highlights: [
         "Led a team of developers in the design and launch of a globally distributed, scalable client portal web app, supporting over 30,000 monthly users; developed with Node.js and React.js",
@@ -108,7 +108,7 @@ export function fetchExperiences(): Experience[] {
       location: "New York, NY",
       position: "Software Engineer",
       startDate: "2015-05",
-      endDate: "2022-12",
+      endDate: "2020-10",
       highlights: [
         "Full Stack Developer. Built key CMS features, including: Content Moderation, Bulk Updates, Data Validation, Media Transformation, and Content Suggestions. Developed with: Node.js, JavaScript, React, Elasticsearch",
         "Built REST APIs for internal and external consumption with Node.js, JavaScript",
