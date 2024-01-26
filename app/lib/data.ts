@@ -112,16 +112,6 @@ export function fetchExperiences(): Experience[] {
       highlights: [
         "Full Stack Developer. Built key CMS features, including: Content Moderation, Bulk Updates, Data Validation, Media Transformation, and Content Suggestions. Developed with: Node.js, JavaScript, React, Elasticsearch",
         "Built REST APIs for internal and external consumption with Node.js, JavaScript",
-        //"Executed ETL data migrations for new and existing clients",
-      ],
-    },
-    {
-      organization: "RubensteinTech",
-      location: "New York, NY",
-      position: "Software Engineer Intern",
-      startDate: "2014-01",
-      endDate: "2015-04",
-      highlights: [
         "Improved business efficiency by building an intranet search app that enabled employees to search for documents across multiple internal resources simultaneously",
       ],
     },
