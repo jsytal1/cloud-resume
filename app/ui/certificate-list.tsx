@@ -10,31 +10,27 @@ export default function Section() {
     <ul>
       {certificates.map((certificate) => {
         return (
-          <li className="flex" key={certificate.name}>
-            <a
-              className="flex align-middle hover:bg-slate-100 space-x-2 p-2 rounded-md"
-              target="_blank"
-              rel="noopener noreferrer"
-              href={certificate.url}
-            >
-              <Image
-                className="w-[60px] h-[60px]"
-                width="60"
-                height="60"
-                alt={`Badge for ${certificate.name}`}
-                src={certificate.image}
-                unoptimized
-              />
-              <div>
-                <h3 className="font-bold">{certificate.name}</h3>
-                <p className="text-sm">
-                  Issuer: <span>{certificate.issuer}</span>
-                </p>
-                <p className="text-gray-800 text-sm">
-                  Issued: <Time date={certificate.date}></Time>
-                </p>
-              </div>
-            </a>
+          <li key={certificate.name}>
+            <div className="flex justify-between items-baseline w-full">
+              <h3 className="font-bold text-base">{certificate.name}</h3>
+              <p className="text-base text-right font-bold">
+                <Time date={certificate.date}></Time>
+              </p>
+            </div>
+            <div>
+              <p className="text-base">
+                <i>{certificate.issuer}</i>
+                <span className="mx-1"> - </span>
+                <a
+                  className="text-indigo-900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={certificate.url}
+                >
+                  {certificate.validation_number}
+                </a>
+              </p>
+            </div>
           </li>
         );
       })}
