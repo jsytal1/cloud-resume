@@ -93,10 +93,12 @@ export function fetchCertificates(): Certificate[] {
   return [
     {
       name: "AWS Certified Solutions Architect – Associate",
-      date: "2023-12-08",
-      issuer: "Amazon Web Services Training and Certification",
-      url: "https://www.credly.com/badges/c4c02599-fff2-440f-9f22-3bcc8e0c93d8/public_url",
-      image: "/aws-certified-solutions-architect-associate.webp",
+      date: "2023-12",
+      issuer: "Amazon Web Services (AWS)",
+      url: "https://www.credly.com/badges/c4c02599-fff2-440f-9f22-3bcc8e0c93d8",
+      validation_number: "CFP4RLCB51B1QDGP",
+      validation_url: "https://aws.amazon.com/verification",
+      //image: "/aws-certified-solutions-architect-associate.webp",
     },
   ];
 }
@@ -169,6 +171,7 @@ export function fetchProjects(): Project[] {
       highlights: [
         "A serverless web app for generating dense crossword puzzles. Built with: IaC via SST, TypeScript, React, Python, Golang, Lambda, API Gateway, Amplify, CloudFront, DynamoDB, S3, Cognito, IAM, Route 53",
       ],
+      date: "2024-01",
     },
     //{
     //  name: "Cloud Resume Challenge",

@@ -53,11 +53,14 @@ export interface Certificate {
   date: string;
   url: string;
   issuer: string;
-  image: string;
+  image?: string;
+  validation_number: string;
+  validation_url: string;
 }
 
 export interface Project {
   name: string;
   url: string;
   highlights: string[];
+  date: string;
 }
