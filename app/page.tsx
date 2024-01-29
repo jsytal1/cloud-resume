@@ -35,11 +35,11 @@ export default function Home() {
         <Section name="Skills">
           <SkillsList />
         </Section>
-        <Section name="Certifications">
-          <CertificateList />
-        </Section>
         <Section name="Projects">
           <ProjectList />
+        </Section>
+        <Section name="Certifications">
+          <CertificateList />
         </Section>
         <Section name="Experience">
           <ExperienceList />
