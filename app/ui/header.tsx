@@ -27,14 +27,18 @@ export default function Header() {
   const tel_phone = basics?.phone ? stripPhonePunctuation(basics.phone) : "";
 
   return (
-    <header className="flex justify-center items-center flex-col">
-      <h1 className="mb-1 text-4xl font-bold text-black">{basics.name}</h1>
+    <header className="flex justify-center items-center flex-col print:flex-row print:justify-center print:mb-2">
+      <h1 className="mb-1 text-4xl font-bold text-black print:order-1 print:flex-1 print:text-center">
+        {basics.name}
+      </h1>
 
       <address
-        className={`not-italic text-sm flex flex-col justify-center items-center `}
+        className={`not-italic text-sm flex flex-col justify-center items-center print:order-0 print:text-base print:flex-1 print:items-start`}
       >
         {basics.email && basics.phone && (
-          <p>
+          <p className="print:flex print:flex-col">
+            <span>{basics.location.city}</span>
+            <span className="mx-1 print:hidden"> · </span>
             <a
               href={`mailto:${basics.email}`}
               className="text-indigo-900"
@@ -43,20 +47,20 @@ export default function Header() {
             >
               {basics.email}
             </a>
-            <span className="mx-1"> · </span>
+            <span className="mx-1 print:hidden"> · </span>
             <a className="text-indigo-900" href={`tel:${tel_phone}`}>
               {basics.phone}
             </a>
-            <span className="mx-1"> · </span>
-            <span>{basics.location.city}</span>
           </p>
         )}
-        <p>
+      </address>
+      <div className="print:order-2 print:flex-1">
+        <p className="print:flex print:flex-col print:items-end">
           {profiles.map((profile, idx) => {
             const trimmedUrl = profile.url.replace(/^https:\/\/(www\.)?/, "");
             return (
               <Fragment key={profile.name}>
-                {idx > 0 && <span className="mx-1"> · </span>}
+                {idx > 0 && <span className="mx-1 print:hidden"> · </span>}
                 <a
                   className="text-indigo-900"
                   key={profile.name}
@@ -70,7 +74,7 @@ export default function Header() {
             );
           })}
         </p>
-      </address>
+      </div>
       {basics.summary && (
         <Section name="Summary">
           <p>{basics.summary}</p>
