@@ -23,12 +23,8 @@ export default function Home() {
           "lg:min-h-[11in]": true,
           "lg:p-[0.7in]": true,
           "lg:my-[1in]": true,
-          "print:m-0": true,
-          "lg:print:my-0": true,
           "print:max-w-none": true,
           "print:shadow-none": true,
-          "print:lg:pt-[.7in]": true,
-          "print:lg:p-[.7in]": true,
         })}
       >
         <Header />
