@@ -10,7 +10,7 @@ export default function Section() {
       {educations.map((education) => {
         return (
           <li
-            className="mb-5 break-inside-avoid"
+            className="mb-5 print:mb-3 break-inside-avoid"
             key={`${education.level}-${education.organization}`}
           >
             <div className="flex justify-between items-baseline">
