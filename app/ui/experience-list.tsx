@@ -10,29 +10,29 @@ export default function Section() {
       {experiences.map((experience) => {
         return (
           <li
-            className="mb-5 break-inside-avoid"
+            className="mb-5 print:mb-3 break-inside-avoid"
             key={`${experience.position}-${experience.organization}`}
           >
             <div className="flex justify-between items-baseline">
-              <div className="text-l font-bold text-black">
+              <div className="text-lg font-bold text-black flex-1">
                 <h3>{experience.position}</h3>
               </div>
-              <div className="text-l font-bold text-right">
+              <div className="text-base whitespace-nowrap flex-1 flex justify-center">
+                <strong>{experience.organization}</strong>
+              </div>
+              <div className="text-base font-bold text-right flex-1">
                 <Time date={experience.startDate} />
                 <span> - </span>
                 <Time date={experience.endDate} />
               </div>
             </div>
             <div className="overflow-auto">
-              <div className="text-l basis-1/2 whitespace-nowrap float-left">
-                <i>{experience.organization}</i>
-              </div>
-              <div className="basis-1/2 text-right whitespace-nowrap float-right">
+              <div className="flex justify-center leading-tight">
                 <span>{experience.location}</span>
               </div>
             </div>
             <div>
-              <ul className="ml-5 list-disc list-outside basis-1/1 mt-2">
+              <ul className="ml-5 list-disc list-outside basis-1/1">
                 {experience.highlights.map((highlight, idx) => {
                   return <li key={idx}>{highlight}</li>;
                 })}
