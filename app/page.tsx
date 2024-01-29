@@ -34,11 +34,11 @@ export default function Home() {
         <Section name="Projects">
           <ProjectList />
         </Section>
-        <Section name="Certifications">
-          <CertificateList />
-        </Section>
         <Section name="Experience">
           <ExperienceList />
+        </Section>
+        <Section name="Certifications">
+          <CertificateList />
         </Section>
         <Section name="Education">
           <EducationList />

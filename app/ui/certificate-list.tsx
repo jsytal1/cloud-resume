@@ -11,25 +11,16 @@ export default function Section() {
       {certificates.map((certificate) => {
         return (
           <li key={certificate.name}>
-            <div className="flex justify-between items-baseline w-full">
+            <div className="flex gap-3">
               <h3 className="font-bold text-base">{certificate.name}</h3>
-              <p className="text-base text-right font-bold">
-                <Time date={certificate.date}></Time>
-              </p>
-            </div>
-            <div>
-              <p className="text-base">
-                <i>{certificate.issuer}</i>
-                <span className="mx-1"> - </span>
-                <a
-                  className="text-indigo-900"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={certificate.url}
-                >
-                  {certificate.validation_number}
-                </a>
-              </p>
+              <a
+                className="text-indigo-900"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={certificate.url}
+              >
+                {certificate.validation_number}
+              </a>
             </div>
           </li>
         );
