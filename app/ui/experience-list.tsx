@@ -14,13 +14,13 @@ export default function Section() {
             key={`${experience.position}-${experience.organization}`}
           >
             <div className="flex justify-between items-baseline">
-              <div className="text-lg font-bold text-black flex-1">
+              <div className="text-base font-bold text-black flex-1">
                 <h3>{experience.position}</h3>
               </div>
-              <div className="text-lg whitespace-nowrap flex-1 flex justify-center">
+              <div className="text-base whitespace-nowrap flex-1 flex justify-center">
                 <strong>{experience.organization}</strong>
               </div>
-              <div className="text-lg font-bold text-right flex-1">
+              <div className="text-base font-bold text-right flex-1">
                 <Time date={experience.startDate} />
                 <span> - </span>
                 <Time date={experience.endDate} />

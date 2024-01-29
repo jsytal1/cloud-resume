@@ -14,22 +14,22 @@ export default function Section() {
             key={`${education.level}-${education.organization}`}
           >
             <div className="flex justify-between items-baseline">
-              <div className="text-l font-bold text-black">
-                <h3 className="text-lg font-bold text-black">
+              <div className="font-bold text-black">
+                <h3 className="text-base font-bold text-black">
                   {education.level} - {education.area_of_study}
                 </h3>
               </div>
-              <div className="text-l font-bold text-right">
+              <div className="text-base font-bold text-right">
                 <Time date={education.startDate} />
                 <span> - </span>
                 <Time date={education.endDate} />
               </div>
             </div>
-            <p className="text-md">
+            <p className="text-base">
               <i>{education.organization}</i>
             </p>
             <ul className="ml-5 list-disc list-outside">
-              <li className="text-md">{education.gpa} GPA</li>
+              <li className="text-base">{education.gpa} GPA</li>
             </ul>
           </li>
         );
