@@ -113,9 +113,9 @@ export function fetchExperiences(): Experience[] {
       endDate: "2023-03",
       highlights: [
         "Led a team of developers in the design and launch of a globally distributed, scalable client portal web app, supporting over 30,000 monthly users; developed with Node.js and React.js",
-        "Designed and implemented an attribute-based access control system optimized for a performant search experience using Elasticsearch",
+        "Designed and implemented an attribute-based access control system creating a performant search experience using Elasticsearch",
         "Optimized data retrieval in a Node.js-based content management system (CMS), cutting database export and API response times by 60%",
-        "Conducted code reviews and provided expert guidance in planning novel software solutions; assisted developers in writing simpler, more robust, and maintainable code",
+        "Conducted code reviews and provided expert guidance in planning novel software solutions; mentored junior engineers assisting them to write simpler, more robust, and maintainable code",
         "Enhanced the processing of content updates, making new data searchable up to five times faster",
       ],
     },
