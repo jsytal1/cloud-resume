@@ -146,7 +146,7 @@ export function fetchEducation(): Education[] {
   return [
     {
       organization: "The Cooper Union for the Advancement of Science and Art",
-      area_of_study: "Civil Engineering",
+      area_of_study: "MEng, Civil Engineering",
       level: "Master of Engineering",
       startDate: "2013-09",
       endDate: "2015-05",
@@ -154,7 +154,7 @@ export function fetchEducation(): Education[] {
     },
     {
       organization: "The Cooper Union for the Advancement of Science and Art",
-      area_of_study: "Civil Engineering",
+      area_of_study: "BE, Civil Engineering",
       level: "Bachelor of Engineering",
       startDate: "2009-09",
       endDate: "2013-05",
