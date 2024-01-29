@@ -129,6 +129,14 @@ export function fetchExperiences(): Experience[] {
         "Improved business efficiency by building an intranet search app that enabled employees to search for documents across multiple internal resources simultaneously",
       ],
     },
+    {
+      organization: "RubensteinTech",
+      location: "New York, NY",
+      position: "Software Engineer Intern",
+      startDate: "2014-01",
+      endDate: "2015-04",
+      highlights: [],
+    },
   ];
 }
 
