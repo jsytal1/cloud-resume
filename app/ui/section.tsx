@@ -6,7 +6,7 @@ export default function Section({
   name: string;
 }) {
   return (
-    <section className="mt-3 print:mt-1">
+    <section className="mt-0">
       <div className="flex items-baseline justify-center">
         <h2 className="mb-1 print:mb-0 text-xl font-bold text-black">
           {name}{" "}

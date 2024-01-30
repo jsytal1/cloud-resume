@@ -6,11 +6,11 @@ export default function Section() {
   const experiences = fetchExperiences();
 
   return (
-    <ul>
+    <ul className="mt-2">
       {experiences.map((experience) => {
         return (
           <li
-            className="mb-5 print:mb-3 break-inside-avoid"
+            className="mb-5 last:mb-0 print:mb-3 break-inside-avoid"
             key={`${experience.position}-${experience.organization}`}
           >
             <div className="flex justify-between items-baseline">

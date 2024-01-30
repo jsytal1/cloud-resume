@@ -6,7 +6,7 @@ export default function Section() {
   const projects = fetchProjects();
 
   return (
-    <ul>
+    <ul className="mt-2">
       {projects.map((item) => {
         return (
           <li className="mb-5 print:mb-3 break-inside-avoid" key={item.name}>

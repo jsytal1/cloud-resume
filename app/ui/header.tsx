@@ -33,7 +33,7 @@ export default function Header() {
       </h1>
 
       <address
-        className={`not-italic text-sm flex flex-col justify-center items-center print:order-0 print:text-base print:flex-1 print:items-start`}
+        className={`not-italic text-sm flex flex-col justify-center items-center print:order-0 print:flex-1 print:items-start`}
       >
         {basics.email && basics.phone && (
           <p className="print:flex print:flex-col">
@@ -54,7 +54,7 @@ export default function Header() {
           </p>
         )}
       </address>
-      <div className="print:order-2 print:flex-1">
+      <div className="print:order-2 print:flex-1 text-sm">
         <p className="print:flex print:flex-col print:items-end">
           {profiles.map((profile, idx) => {
             const trimmedUrl = profile.url.replace(/^https:\/\/(www\.)?/, "");
