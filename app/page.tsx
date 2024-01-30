@@ -28,17 +28,17 @@ export default function Home() {
         })}
       >
         <Header />
-        <Section name="Skills">
-          <SkillsList />
-        </Section>
-        <Section name="Projects">
-          <ProjectList />
-        </Section>
         <Section name="Experience">
           <ExperienceList />
         </Section>
+        <Section name="Skills">
+          <SkillsList />
+        </Section>
         <Section name="Certifications">
           <CertificateList />
+        </Section>
+        <Section name="Projects">
+          <ProjectList />
         </Section>
         <Section name="Education">
           <EducationList />

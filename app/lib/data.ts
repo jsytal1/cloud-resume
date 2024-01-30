@@ -54,7 +54,7 @@ export function fetchSkills(): Skills[] {
   return [
     {
       category: "Languages",
-      keywords: ["JavaScript", "TypeScript", "Python", "SQL"],
+      keywords: ["TypeScript", "JavaScript", "Python", "SQL"],
     },
     {
       category: "Frameworks & Libraries",
