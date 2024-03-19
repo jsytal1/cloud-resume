@@ -27,7 +27,7 @@ export default function Header() {
   const tel_phone = basics?.phone ? stripPhonePunctuation(basics.phone) : "";
 
   return (
-    <header className="flex justify-center items-center flex-col print:flex-row print:justify-center print:mb-2">
+    <header className="flex justify-center items-center flex-col print:flex-row print:justify-center print:mb-0">
       <h1 className="mb-1 text-4xl font-bold text-black print:order-1 print:flex-1 print:text-center">
         {basics.name}
       </h1>

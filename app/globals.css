@@ -15,7 +15,7 @@ body {
     background: transparent;
   }
   main {
-    margin: 0 0.2in 0 0.2in !important;
-    padding: 0.1in !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }

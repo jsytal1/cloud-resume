@@ -6,7 +6,7 @@ export default function Section() {
   const educations = fetchEducation();
 
   return (
-    <ul className="mt-2">
+    <ul className="mt-2 print:mt-0">
       {educations.map((education) => {
         return (
           <li

@@ -7,11 +7,11 @@ export default function Section() {
   const certificates = fetchCertificates();
 
   return (
-    <ul className="mt-2">
+    <ul className="mt-2 print:mt-0">
       {certificates.map((certificate) => {
         return (
           <li
-            className="mb-5 print:mb-3 break-inside-avoid"
+            className="mb-3 print:mb-1 break-inside-avoid"
             key={certificate.name}
           >
             <div className="flex gap-3">

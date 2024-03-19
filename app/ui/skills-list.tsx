@@ -5,7 +5,7 @@ export default function Section() {
   const skills = fetchSkills();
 
   return (
-    <ul className="mt-2 mb-2">
+    <ul className="mt-2 print:mt-0 mb-2">
       {skills.map((skill) => {
         return (
           <li key={skill.category}>
