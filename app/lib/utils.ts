@@ -24,7 +24,9 @@ export const formatDate = (dateStr: string) => {
   const month = months[monthIndex];
   const day = parts[2];
 
-  if (parts.length === 2) {
+  if (parts.length === 1) {
+    return `${year}`;
+  } else if (parts.length === 2) {
     return `${month} ${year}`;
   } else if (parts.length === 3) {
     return `${month}, ${day} ${year}`;
