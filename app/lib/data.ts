@@ -69,9 +69,9 @@ export function fetchSkills(): Skills[] {
       category: "Databases",
       keywords: [
         "PostgreSQL",
-        "MySQL",
         "DynamoDB",
         "Elasticsearch",
+        "MySQL",
         "Couchbase",
       ],
     },
@@ -118,6 +118,7 @@ export function fetchExperiences(): Experience[] {
         "Optimized data retrieval in a Node.js-based content management system (CMS), cutting database export and API response times by 60%",
         "Conducted code reviews and provided expert guidance in planning novel software solutions; mentored junior engineers assisting them to write simpler, more robust, and maintainable code",
         "Enhanced the processing of content updates, making new data searchable up to five times faster",
+        "Skills: JavaScript · Technology Leadership · Software Infrastructure · React.js · Elasticsearch",
       ],
     },
     {
@@ -127,9 +128,10 @@ export function fetchExperiences(): Experience[] {
       startDate: "2015-05",
       endDate: "2020-10",
       highlights: [
-        "Full Stack Developer. Built key CMS features, including: Content Moderation, Bulk Updates, Data Validation, Media Transformation, and Content Suggestions. Developed with: Node.js, JavaScript, React, Elasticsearch",
+        "Full Stack Developer. Built key CMS features, including: Content Moderation, Bulk Updates, Data Validation, Media Transformation, and Content Suggestions",
         "Built REST APIs for internal and external consumption with Node.js, JavaScript",
         "Improved business efficiency by building an intranet search app that enabled employees to search for documents across multiple internal resources simultaneously",
+        "Skills: JavaScript · Node.js · React.js · Elasticsearch · Software Infrastructure",
       ],
     },
     {
@@ -138,7 +140,9 @@ export function fetchExperiences(): Experience[] {
       position: "Software Engineer Intern",
       startDate: "2014-01",
       endDate: "2015-04",
-      highlights: [],
+      highlights: [
+        "Skills: Internet Software · Engineering · JavaScript · HTML",
+      ],
     },
   ];
 }
@@ -174,12 +178,13 @@ export function fetchProjects(): Project[] {
       ],
       date: "2024-01",
     },
-    //{
-    //  name: "Cloud Resume Challenge",
-    //  url: "https://resume.jozef.syta.dev",
-    //  highlights: [
-    //    "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, API Gateway, and Cloudflare",
-    //  ],
-    //},
+    {
+      name: "Cloud Resume Challenge",
+      url: "https://resume.jozef.syta.dev",
+      highlights: [
+        "Developed and deployed a cloud-native resume, utilizing AWS Lambda, DynamoDB, API Gateway, and Cloudflare",
+      ],
+      date: "2023-11",
+    },
   ];
 }
