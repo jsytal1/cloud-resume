@@ -48,7 +48,10 @@ export default function Header() {
               {basics.email}
             </a>
             <span className="mx-1 print:hidden"> · </span>
-            <a className="text-indigo-900" href={`tel:${tel_phone}`}>
+            <a
+              className="text-indigo-900 whitespace-nowrap"
+              href={`tel:${tel_phone}`}
+            >
               {basics.phone}
             </a>
           </p>
