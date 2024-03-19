@@ -8,7 +8,7 @@ export default function Section() {
     <ul className="mt-2 print:mt-0 mb-2">
       {skills.map((skill) => {
         return (
-          <li key={skill.category}>
+          <li className="print:leading-5" key={skill.category}>
             <strong>{skill.category}: </strong>
             {skill.keywords.map((keyword, idx) => (
               <Fragment key={keyword}>

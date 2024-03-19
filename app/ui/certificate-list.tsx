@@ -7,7 +7,7 @@ export default function Section() {
   const certificates = fetchCertificates();
 
   return (
-    <ul className="mt-2 print:mt-0">
+    <ul className="mt-2 print:mt-1">
       {certificates.map((certificate) => {
         return (
           <li
