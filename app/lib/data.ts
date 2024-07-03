@@ -97,11 +97,11 @@ export function fetchSkills(): Skills[] {
 export function fetchCertificates(): Certificate[] {
   return [
     {
-      name: "Meta Android Developer Certificate",
+      name: "Meta Android Developer by Meta on Coursera",
       date: "2024-07",
       issuer: "Issued by: Coursera | Authorized by: Meta",
-      url: "https://www.credly.com/go/2TUz6uD4",
-      validation_number: "credly.com/go/2TUz6uD4",
+      url: "https://www.coursera.org/account/accomplishments/professional-cert/MZDXHQ75A4GB",
+      validation_number: "MZDXHQ75A4GB",
       validation_url: "https://www.credly.com/badges/9c0ab9f0-46dd-40a5-a74b-3979d387cfa9",
     },
     {

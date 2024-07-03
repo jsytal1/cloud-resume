@@ -24,6 +24,9 @@ export default function Section() {
               >
                 {certificate.validation_number}
               </a>
+              <div className="text-base font-bold text-right flex-1">
+                <Time date={certificate.date} />
+              </div>
             </div>
           </li>
         );
