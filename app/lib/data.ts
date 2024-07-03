@@ -54,12 +54,14 @@ export function fetchSkills(): Skills[] {
   return [
     {
       category: "Languages",
-      keywords: ["TypeScript", "Python", "JavaScript", "SQL"],
+      keywords: ["TypeScript", "Python", "Kotlin", "JavaScript", "SQL"],
     },
     {
       category: "Frameworks & Libraries",
       keywords: [
         "React",
+        "React Native",
+        "Jetpack Compose",
         "Node.js",
         "Next.js",
         "SST (Serverless Stack Toolkit)",
@@ -80,6 +82,8 @@ export function fetchSkills(): Skills[] {
       keywords: [
         "Data Structures and Algorithms (DSA)",
         "Amazon Web Services (AWS)",
+        "Android Studio",
+        "RabbitMQ",
         "Docker",
         "Git",
         "CI/CD",
