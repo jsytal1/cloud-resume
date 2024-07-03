@@ -27,18 +27,17 @@ export default function Header() {
   const tel_phone = basics?.phone ? stripPhonePunctuation(basics.phone) : "";
 
   return (
-    <header className="flex justify-center items-center flex-col print:flex-row print:justify-center print:mb-0">
-      <h1 className="mb-1 text-4xl font-bold text-black print:order-1 print:flex-1 print:text-center">
+    <header className="flex justify-center items-center flex-row justify-center mb-5 print:mb-2">
+      <h1 className="mb-1 text-4xl font-bold text-black order-1 flex-1 text-center">
         {basics.name}
       </h1>
 
       <address
-        className={`not-italic text-sm flex flex-col justify-center items-center print:order-0 print:flex-1 print:items-start`}
+        className={`not-italic text-sm flex flex-col order-0 flex-1 items-start`}
       >
         {basics.email && basics.phone && (
-          <p className="print:flex print:flex-col">
+          <p className="flex flex-col">
             <span>{basics.location.city}</span>
-            <span className="mx-1 print:hidden"> · </span>
             <a
               href={`mailto:${basics.email}`}
               className="text-indigo-900"
@@ -47,7 +46,6 @@ export default function Header() {
             >
               {basics.email}
             </a>
-            <span className="mx-1 print:hidden"> · </span>
             <a
               className="text-indigo-900 whitespace-nowrap"
               href={`tel:${tel_phone}`}
@@ -57,13 +55,12 @@ export default function Header() {
           </p>
         )}
       </address>
-      <div className="print:order-2 print:flex-1 text-sm">
-        <p className="print:flex print:flex-col print:items-end">
+      <div className="order-2 flex-1 text-sm">
+        <p className="flex flex-col items-end">
           {profiles.map((profile, idx) => {
             const trimmedUrl = profile.url.replace(/^https:\/\/(www\.)?/, "");
             return (
               <Fragment key={profile.name}>
-                {idx > 0 && <span className="mx-1 print:hidden"> · </span>}
                 <a
                   className="text-indigo-900"
                   key={profile.name}
