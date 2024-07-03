@@ -13,7 +13,7 @@ export default function Section() {
             {skill.keywords.map((keyword, idx) => (
               <Fragment key={keyword}>
                 {!!idx && <span> · </span>}
-                <span>{keyword}</span>
+                <span className="whitespace-nowrap">{keyword}</span>
               </Fragment>
             ))}
           </li>
