@@ -97,6 +97,14 @@ export function fetchSkills(): Skills[] {
 export function fetchCertificates(): Certificate[] {
   return [
     {
+      name: "Meta Android Developer Certificate",
+      date: "2024-07",
+      issuer: "Issued by: Coursera | Authorized by: Meta",
+      url: "https://www.credly.com/go/2TUz6uD4",
+      validation_number: "credly.com/go/2TUz6uD4",
+      validation_url: "https://www.credly.com/badges/9c0ab9f0-46dd-40a5-a74b-3979d387cfa9",
+    },
+    {
       name: "AWS Certified Solutions Architect – Associate",
       date: "2023-12",
       issuer: "Amazon Web Services (AWS)",
@@ -174,6 +182,14 @@ export function fetchEducation(): Education[] {
 
 export function fetchProjects(): Project[] {
   return [
+    {
+      name: "Little Lemon - Restaurant Ordering App",
+      url: "https://github.com/jsytal1/little-lemon",
+      highlights: [
+        "Capstone project for the Coursera 'Android App Capstone' course by Meta, this app simulates ordering food from the fictional Little Lemon restaurant. Developed using Android Studio, Kotlin, Jetpack Compose, and Material Design. Features an onboarding flow, user profile management, dynamic menu interface, and navigation setup."
+      ],
+      date: "2024-07"
+    },
     {
       name: "Make Me Cross - Crossword Maker",
       url: "https://makemecross.com",
