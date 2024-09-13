@@ -65,6 +65,8 @@ export function fetchSkills(): Skills[] {
         "Node.js",
         "Next.js",
         "SST (Serverless Stack Toolkit)",
+        "TensorFlow Lite",
+        "PyTorch",
       ],
     },
     {
@@ -186,6 +188,14 @@ export function fetchEducation(): Education[] {
 
 export function fetchProjects(): Project[] {
   return [
+    {
+      name: "My Audio Events - Audio Event Recorder and Classifier",
+      url: "https://github.com/jsytal1/my-audio-events",
+      highlights: [
+        "An Android app that automates detection and recording of audio events entirely on-device, ensuring user privacy. Developed using Android Studio, Kotlin, Jetpack Compose, TensorFlow Lite, and PyTorch. Features a real-time audio event classifier with model personalization, audio event recording, and a user-friendly interface—all without requiring internet permissions for a fully offline-first and private experience."
+      ],
+      date: "2024-08"
+    },
     {
       name: "Little Lemon - Restaurant Ordering App",
       url: "https://github.com/jsytal1/little-lemon",
