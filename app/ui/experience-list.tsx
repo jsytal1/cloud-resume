@@ -1,4 +1,5 @@
 import { fetchExperiences } from "@/app/lib/data";
+import Markdown from 'react-markdown'
 
 import Time from "@/app/ui/time";
 
@@ -36,7 +37,7 @@ export default function Section() {
                 {experience.highlights.map((highlight, idx) => {
                   return (
                     <li className="print:leading-5" key={idx}>
-                      {highlight}
+                      <Markdown>{highlight}</Markdown>
                     </li>
                   );
                 })}
